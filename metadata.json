@@ -1,0 +1,6 @@
+{
+  "name": "Sherlock",
+  "description": "A tactile deductive logic grid puzzle with custom vector tiles, spatial clues, full undo history, and step-by-step logic hints.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

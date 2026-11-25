@@ -1,0 +1,180 @@
+---
+name: Sherlock
+colors:
+  surface: '#faf9f6'
+  surface-dim: '#dbdad7'
+  surface-bright: '#faf9f6'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f4f3f0'
+  surface-container: '#efeeeb'
+  surface-container-high: '#e9e8e5'
+  surface-container-highest: '#e3e2df'
+  on-surface: '#1a1c1a'
+  on-surface-variant: '#43474f'
+  inverse-surface: '#2f312f'
+  inverse-on-surface: '#f2f1ee'
+  outline: '#747780'
+  outline-variant: '#c3c6d0'
+  surface-tint: '#3f5f92'
+  primary: '#0e3566'
+  on-primary: '#ffffff'
+  primary-container: '#2b4c7e'
+  on-primary-container: '#9ebdf7'
+  inverse-primary: '#a9c7ff'
+  secondary: '#146b4c'
+  on-secondary: '#ffffff'
+  secondary-container: '#a0f0c9'
+  on-secondary-container: '#1b7051'
+  tertiary: '#71000d'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#97141c'
+  on-tertiary-container: '#ffa49e'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#d6e3ff'
+  primary-fixed-dim: '#a9c7ff'
+  on-primary-fixed: '#001b3d'
+  on-primary-fixed-variant: '#254778'
+  secondary-fixed: '#a3f3cc'
+  secondary-fixed-dim: '#87d6b1'
+  on-secondary-fixed: '#002114'
+  on-secondary-fixed-variant: '#005138'
+  tertiary-fixed: '#ffdad7'
+  tertiary-fixed-dim: '#ffb3ae'
+  on-tertiary-fixed: '#410004'
+  on-tertiary-fixed-variant: '#900d18'
+  background: '#faf9f6'
+  on-background: '#1a1c1a'
+  surface-variant: '#e3e2df'
+typography:
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+    letterSpacing: 0em
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+    letterSpacing: 0.01em
+  label-lg:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.01em
+  label-md:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.03em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  margin: 1.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system embodies a **Modern Tactile Minimalism**â€”merging the crisp, editorial clarity of daily puzzle publications with the quiet, deliberate craft of classic detective stationery.
+
+### Brand Personality & Audience
+- **Personality:** Sharp, observant, calm, and intellectually rewarding. It feels like a well-printed broadsheet puzzle paired with heavy cotton paper and a freshly sharpened pencil.
+- **Target Audience:** Daily puzzle enthusiasts, logic game players, and commuters seeking a focused, distraction-free mental ritual.
+- **Emotional Response:** Focused calm, tactile satisfaction, and quiet confidence. Every interactionâ€”marking a cell, crossing off a clue, or confirming a deductionâ€”should feel deliberate and crisp.
+
+### Visual Direction
+- **Editorial Precision:** Generous breathing room, clear typographic hierarchy, and restrained color usage ensure the logic grid remains the undisputed focal point.
+- **Tactile Stationery:** Warm paper-like surfaces, hairline borders, and subtle elevation cues give digital cards and grid cells a physical, grounded presence without resorting to heavy skeuomorphism.
+
+## Colors
+
+The palette is anchored in warm, low-glare paper tones and high-contrast ink, reserving saturated hues strictly for interactive focus and logical state feedback.
+
+### Surface & Ink Hierarchy
+- **Canvas Background (`#F8F7F4`):** Warm alabaster/ivory that reduces eye strain during extended deduction sessions.
+- **Elevated Surface (`#FFFFFF`):** Crisp white for active puzzle cards, clue drawers, and modal dialogs, creating clear separation from the canvas.
+- **Hairline Border (`#E5E2DC`):** Subtle warm-gray 1px rules used to define grid cells, card edges, and dividers.
+- **Primary Ink (`#1C1B18`):** Deep charcoal for puzzle titles, clue statements, and primary grid labels.
+- **Secondary Ink (`#6E6B64`):** Muted slate for category headers, timer readouts, and supporting metadata.
+
+### Accent & Semantic States
+- **Primary Accent (`#2B4C7E`):** Detective-indigo/navy used for primary actions, active cell selection rings, and focus indicators.
+- **Confirmed / Selected (`#2A7B5B`):** Emerald green indicating verified deductions, completed clues, and positive checkmarks in the logic grid.
+- **Negated / Eliminated (`#C93B3B`):** Semantic crimson reserved for crossed-out possibilities, "X" marks, and contradiction warnings.
+
+### Accessibility
+All text-on-surface combinations maintain at least a 4.5:1 contrast ratio. Semantic states (emerald and crimson) must always be paired with distinct iconography (checkmarks vs. crosses) so color is never the sole indicator of logical state.
+
+## Typography
+
+The typographic pairing balances the approachable, geometric warmth of **Plus Jakarta Sans** for headings with the crisp, utilitarian legibility of **Inter** for clues, grid labels, and UI controls.
+
+### Usage Guidelines
+- **Tabular Numbers:** Enable `font-variant-numeric: tabular-nums` on all timers, move counters, grid coordinates, and puzzle dimensions so numbers align cleanly without horizontal jitter.
+- **Clue Readability:** Clue statements use `body-lg` or `body-md` with generous line height to support rapid scanning and cross-referencing.
+- **Grid Headers:** Category and item labels along the logic grid axes use `label-md` or `label-sm` in uppercase or sentence case with subtle letter spacing for crisp separation.
+
+## Layout & Spacing
+
+The layout follows a **Fixed-Max-Width Centered Grid** philosophy, ensuring the logic matrix and clue list remain comfortably within the user's natural field of vision on large monitors while adapting cleanly to smaller viewports.
+
+### Grid & Breakpoints
+- **Desktop (`HL
+NŠŠˆHL‹XÛÛ[[ˆÜšYÛÛœİ˜Z[™YÈHX^[][HÚYÙˆLLŒÚ]\™[X
+Mœ
+Hİ]\œÈ[™K\™[X
+
+Hİ]\ˆX\™Ú[œËˆHÙÚXÈÜšY\XØ[HØØİ\Y\È(	3‚6öÇVÖç2öâF†RÆVgBÂ—&VBv—F‚7F–6·’N(	3R6öÇVÖâ6ÇVRæVÂöâF†R&–v‡Bà¢Ò¢¥F&ÆWB†sc‡‚(	2#7†“¢¢¢â‚Ö6öÇVÖâw&–Bv—F‚&VÖwWGFW'2âF†RÆöv–2w&–B&VÖ–ç2&öÖ–æVçBBF†RF÷Âv—F‚F†R6ÇVRæVÂ÷6—F–öæVB&VÆ÷r÷"–â6öÆÆ6–&ÆR6–FRG&vW"à¢Ò¢¤Öö&–ÆR†Âsc‡†“¢¢¢BÖ6öÇVÖâfÇV–Bw&–Bv—F‚&VÖ÷WFW"Ö&v–ç2âF†RÆöv–2w&–B7ç2gVÆÂv–GF‚ÂæB6ÇVW2&R&W6VçFVB–â7v—V&ÆR÷"Fö6¶VB&÷GFöÒ6†VWBFòÖ†–Ö—¦Rw&–Bf—6–&–Æ—G’à ¢22276–ær&‡—F†Ğ¢ÒW6R76R×‡6†G†’æB76R×6Ö†‡†’f÷"F–v‡Bw&÷W–æw27V6‚2–6öâ×FòÖÆ&VÂ—'2æB–çFW&æÂw&–B6VÆÂFF–ærà¢ÒW6R76RÖÖF†g†’f÷"7FæF&B6&BFF–æræBfW'F–6Â76–ær&WGvVVâ6ÇVR—FV×2à¢ÒW6R76RÖÆv†#G†’æB76R×†Æ†3'†’Fò6W&FRÖ¦÷"6V7F–öç2Â7V6‚2F†R†VFW"&"ÂF†RÆöv–2ÖG&—‚ÂæBF†R7F–öâFööÆ&"à ¢22VÆWfF–öâbFWF€ ¤FWF‚—26öÖ×Væ–6FVBF‡&÷Vv‚6öÖ&–æF–öâöb¢¤Æ÷rÔ6öçG&7B÷WFÆ–æW2¢¢æB¢¥7V'FÆRÖ&–VçB6†F÷w2¢¢ÂWfö¶–ærÆ–W&VBW"6&G2&W7F–æröâFW6²à ¢2227W&f6RF–W'0¢Ò¢¤&6R6çf2†4c„ctcF“¢¢¢fÆBÂVç6†F÷vVB&6¶w&÷VæBÆ–W"à¢Ò¢¤VÆWfFVB6&G2†4dddddf“¢¢¢6W&FVBg&öÒF†R6çf2W6–ær7&—7‚6öÆ–B4STS$D6&÷&FW"—&VBv—F‚6ögBÂF–fgW6VB6†F÷r†'‚‡‚&v&ƒ#‚Â#rÂ#BÂãB–’à¢Ò¢¤fÆöF–ær6öçG&öÇ2bÖöFÇ3¢¢¢÷÷fW'2Â†–çBF–Æöw2ÂæBf–7F÷'’ÖöFÇ2W6R6Æ–v‡FÇ’FVWW"Ö&–VçB6†F÷r†‡‚#G‚&v&ƒ#‚Â#rÂ#BÂã‚–’v—F‚F†R6ÖR††—&Æ–æR&÷&FW"FòÖ–çF–â7&—7æW72à¢Ò¢¤–çFW&7F—fRw&–B6VÆÇ3¢¢¢–æF—f–GVÂ6VÆÇ2&VÖ–âfÆBv—F†–âF†RÖG&—‚ÂW6–ær7V'FÆR&6¶w&÷VæBF–çG2æB‚–ææW"&÷&FW'2&F†W"F†â6†F÷w2Fòfö–Bf—7VÂæö—6Rà ¢226†W0 ¥F†R6†RÆæwVvRW6W2¢¥&÷VæFVB†ãW&VÖò‡†’¢¢&6VÆ–æRÂ6ögFVæ–ærF†R7G&–7BvVöÖWG'’öbF†RÆöv–2w&–B6òF†R–çFW&f6RfVVÇ2&ö6†&ÆRæBF7F–ÆRà ¢Ò¢¤6&G2b6öçF–æW'3¢¢¢W6R&÷VæFVBÖÆv†&VÖòg†’f÷"&–Ö'’W§¦ÆR6&G2æBÖöFÂF–Æöw2à¢Ò¢¤'WGFöç2Â–çWG2b6†—3¢¢¢W6RF†R&6RãW&VÖ†‡†’&F—W2f÷"–çFW&7F—fR6öçG&öÇ2Â6ÇVR6&G2ÂæBFööÆ&"'WGFöç2à¢Ò¢¤w&–B6VÆÇ3¢¢¢÷WFW"6÷&æW'2öbF†RÆöv–2ÖG&—‚ÖF6‚F†R6&B&F—W2†ãW&VÖ’Âv†–ÆR–çFW&æÂ6VÆÇ2&VÖ–â6†'††’Fò&W6W'fR6ÆVâÂVæ–çFW''WFVBw&–BÆ–æW2à ¢226ö×öæVçG0 ¢222'WGFöç0¢Ò¢¥&–Ö'’7F–öã¢¢¢6öÆ–BFWFV7F—fRÖ–æF–vò†3$#D3tV’&6¶w&÷VæBv—F‚7&—7v†—FRFW‡B†4dddddf’ÂãW&VÖ&F—W2ÂæBÆ&VÂÖÆvG—öw&‡’âW6VBf÷"$6†V6²W§¦ÆR"÷"$æWrvÖRâ ¢Ò¢¥6V6öæF'’7F–öã¢¢¢v†—FR†4dddddf’&6¶w&÷VæBv—F‚‚6öÆ–B4STS$D6&÷&FW"æB6†&6öÂ–æ²†33#†’âW6VBf÷"%VæFòÂ"$†–çBÂ"÷"$6ÆV"â ¢Ò¢¤v†÷7Bò–6öâ'WGFöç3¢¢¢G&ç7&VçB&6¶w&÷VæBv—F‚×WFVB6ÆFR†3dSd#cF’–6öç2F†B6†–gBFò33#†öâ†÷fW"à ¢222Æöv–2w&–B6VÆÇ0¢Ò¢¤V×G’7FFS¢¢¢7&—7v†—FR†4dddddf’v—F‚‚6öÆ–B4STS$D6&÷&FW'2â†÷fW&–ærÆ–W27V'FÆR4c„ctcFF–çBà¢Ò¢¥6VÆV7FVBòfö7W6VC¢¢¢'†–ææW"&–ær–â3$#D3tVFò6ÆV&Ç’–æF–6FRF†R7F—fR&÷rö6öÇVÖâ–çFW'6V7F–öâà¢Ò¢¤6öæf—&ÖVB†)É6“¢¢¢6ögBVÖW&ÆBF–çB†&v&ƒC"Â#2Â“Âã‚–’v—F‚3$t#T&6†V6¶Ö&²–6öâà¢Ò¢¤æVvFVB†)ÉV“¢¢¢7V'FÆRæWWG&Â÷"6ögB7&–×6öâF–çB†&v&ƒ#ÂS’ÂS’Âãb–’v—F‚43“4#4&7&÷72–6öâà ¢2226ÇVR6&G2bÆ—7G0¢Ò¢¤6ÇVR—FVÓ¢¢¢&VæFW&VB26ö×7B6&B÷"Æ—7B&÷rv—F‚76RÖÖFFF–ærâ6Æ–6¶–ær6ÇVRFövvÆW2—G2&7&÷76VBÖöfb"7FFRÂ×WF–ærF†RFW‡BFò3dSd#cFv—F‚7G&–¶WF‡&÷Vv‚à¢Ò¢¤7F—fR6ÇVR†–v†Æ–v‡C¢¢¢v†Vâ6ÇVR—2–ææVB÷"†÷fW&VBÂ—B&V6V—fW2‚6öÆ–B3$#D3tV&÷&FW"à ¢2226†—2b&FvW0¢Ò¢¤F–ff–7VÇG’ò6FVv÷'’6†—3¢¢¢–ÆÂ×6†VB÷"ãW&VÖ&÷VæFVBFw2W6–ær4c„ctcF&6¶w&÷VæBÂ‚6öÆ–B4STS$D6&÷&FW"ÂæBÆ&VÂ×6ÖFW‡Bà ¢2226†V6¶&÷†W2Â&F–ò'WGFöç2b–çWG0¢Ò¢¤6öçG&öÇ3¢¢¢ã#W&VÖ†G†’&÷VæFVFæW72f÷"6†V6¶&÷†W2v—F‚3$#D3tVf–ÆÂv†Vâ6†V6¶VBà¢Ò¢¤–çWBf–VÆG3¢¢¢7&—7v†—FR†4dddddf’v—F‚‚6öÆ–B4STS$D6&÷&FW"ÂG&ç6—F–öæ–ærFò3$#D3tVöâfö7W2à ¢2226&G0¢Ò¢¥W§¦ÆRb7VÖÖ'’6&G3¢¢¢v†—FR†4dddddf’7W&f6RÂ‚6öÆ–B4STS$D6&÷&FW"Â&VÖ†g†’&F—W2ÂæB6ögBÖ&–VçB6†F÷râ–çFW&æÂ6öçFVçBW6W276RÖÆvFF–ær
