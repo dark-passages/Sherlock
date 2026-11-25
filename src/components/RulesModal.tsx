@@ -100,8 +100,8 @@ export const RulesModal: React.FC<RulesModalProps> = ({ isOpen, onClose }) => {
                   <ClueTileBox tile={{ row: 3, item: 0 }} size={28} />
                 </div>
                 <p className="text-xs text-ink-muted">
-                  <strong className="text-ink">Left-Of:</strong> The Green House
-                  is somewhere to the left of the Stop Sign (not necessarily next
+                  <strong className="text-ink">Left-Of:</strong> The Cottage is
+                  somewhere to the left of the Stop Sign (not necessarily next
                   to it).
                 </p>
               </div>

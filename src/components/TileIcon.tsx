@@ -165,31 +165,146 @@ function renderPerson(item: number) {
 }
 
 function renderHouse(item: number) {
-  const palettes = [
-    { wall: '#2F855A', roof: '#1C4532', door: '#F6E05E' }, // 0 Green
-    { wall: '#C84B31', roof: '#7F1D1D', door: '#FEF3C7' }, // 1 Red
-    { wall: '#EA580C', roof: '#9A3412', door: '#FEF9C3' }, // 2 Orange
-    { wall: '#2563EB', roof: '#1E3A8A', door: '#FDE68A' }, // 3 Blue
-    { wall: '#EAB308', roof: '#854D0E', door: '#FFFFFF' }, // 4 Yellow
-    { wall: '#7C3AED', roof: '#4C1D95', door: '#FDE68A' }, // 5 Purple
-    { wall: '#0D9488', roof: '#134E4A', door: '#FDBA74' }, // 6 Teal
-    { wall: '#F5EFE0', roof: '#B45309', door: '#92400E' }, // 7 Cream Villa
-    { wall: '#64748B', roof: '#1E293B', door: '#E2E8F0' }, // 8 Slate Manor
-  ];
-  const p = palettes[item % palettes.length];
   const stroke = '#1C1B18';
 
-  return (
-    <g>
-      <rect x="42" y="13" width="6" height="12" fill={p.roof} stroke={stroke} strokeWidth="2" />
-      <rect x="14" y="30" width="36" height="25" rx="2" fill={p.wall} stroke={stroke} strokeWidth="2.4" />
-      <polygon points="8,32 32,12 56,32" fill={p.roof} stroke={stroke} strokeWidth="2.4" strokeLinejoin="round" />
-      <rect x="27" y="40" width="10" height="15" rx="1.5" fill={p.door} stroke={stroke} strokeWidth="2" />
-      <rect x="18" y="36" width="6" height="7" rx="1" fill="#E0F2FE" stroke={stroke} strokeWidth="1.8" />
-      <rect x="40" y="36" width="6" height="7" rx="1" fill="#E0F2FE" stroke={stroke} strokeWidth="1.8" />
-      <circle cx="34.5" cy="48" r="1.2" fill={stroke} />
-    </g>
-  );
+  switch (item) {
+    case 0: // Cottage (Forest green pitched-roof house + chimney)
+      return (
+        <g>
+          <rect x="42" y="13" width="6" height="12" fill="#1C4532" stroke={stroke} strokeWidth="2" />
+          <rect x="14" y="30" width="36" height="25" rx="2" fill="#2F855A" stroke={stroke} strokeWidth="2.4" />
+          <polygon points="8,32 32,12 56,32" fill="#1C4532" stroke={stroke} strokeWidth="2.4" strokeLinejoin="round" />
+          <rect x="27" y="40" width="10" height="15" rx="1.5" fill="#F6E05E" stroke={stroke} strokeWidth="2" />
+          <rect x="18" y="36" width="6" height="7" rx="1" fill="#E0F2FE" stroke={stroke} strokeWidth="1.8" />
+          <rect x="40" y="36" width="6" height="7" rx="1" fill="#E0F2FE" stroke={stroke} strokeWidth="1.8" />
+          <circle cx="34.5" cy="48" r="1.2" fill={stroke} />
+        </g>
+      );
+    case 1: // Red Barn (Gambrel roof + bold white X-door)
+      return (
+        <g>
+          <polygon
+            points="12,31 18,19 32,12 46,19 52,31"
+            fill="#7F1D1D"
+            stroke={stroke}
+            strokeWidth="2.4"
+            strokeLinejoin="round"
+          />
+          <rect x="13" y="31" width="38" height="24" rx="1.5" fill="#DC2626" stroke={stroke} strokeWidth="2.4" />
+          <rect x="27" y="21" width="10" height="7" rx="1" fill="#FEF3C7" stroke={stroke} strokeWidth="1.8" />
+          <rect x="21" y="37" width="22" height="18" fill="#FFFFFF" stroke={stroke} strokeWidth="2.2" />
+          <path d="M21 37l22 18M43 37L21 55" stroke="#B91C1C" strokeWidth="2.2" />
+        </g>
+      );
+    case 2: // Pagoda (Tiered curved roofs + ivory walls + amber gold)
+      return (
+        <g>
+          <line x1="32" y1="7" x2="32" y2="14" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" />
+          <rect x="21" y="24" width="22" height="10" fill="#FEF3C7" stroke={stroke} strokeWidth="2" />
+          <path
+            d="M12 25c6 0 11-5 20-12 9 7 14 12 20 12H12z"
+            fill="#D97706"
+            stroke={stroke}
+            strokeWidth="2.3"
+            strokeLinejoin="round"
+          />
+          <rect x="16" y="40" width="32" height="15" fill="#FEF3C7" stroke={stroke} strokeWidth="2.2" />
+          <path
+            d="M7 41c7 0 12-5 15-8h20c3 3 8 8 15 8H7z"
+            fill="#F59E0B"
+            stroke={stroke}
+            strokeWidth="2.3"
+            strokeLinejoin="round"
+          />
+          <rect x="27" y="43" width="10" height="12" rx="1" fill="#92400E" stroke={stroke} strokeWidth="2" />
+        </g>
+      );
+    case 3: // Townhouse (Tall narrow blue 3-story building)
+      return (
+        <g>
+          <rect x="18" y="10" width="28" height="45" rx="2" fill="#2563EB" stroke={stroke} strokeWidth="2.4" />
+          <rect x="15" y="9" width="34" height="5" rx="1.5" fill="#1E3A8A" stroke={stroke} strokeWidth="2.2" />
+          <rect x="23" y="18" width="6" height="7" rx="1" fill="#FEF08A" stroke={stroke} strokeWidth="1.8" />
+          <rect x="35" y="18" width="6" height="7" rx="1" fill="#FEF08A" stroke={stroke} strokeWidth="1.8" />
+          <rect x="23" y="29" width="6" height="7" rx="1" fill="#E0F2FE" stroke={stroke} strokeWidth="1.8" />
+          <rect x="35" y="29" width="6" height="7" rx="1" fill="#FEF08A" stroke={stroke} strokeWidth="1.8" />
+          <rect x="27" y="41" width="10" height="14" rx="1.5" fill="#FDE68A" stroke={stroke} strokeWidth="2" />
+        </g>
+      );
+    case 4: // Windmill (Tapered yellow tower + diagonal 4-blade sails)
+      return (
+        <g>
+          <polygon points="22,55 26,22 38,22 42,55" fill="#EAB308" stroke={stroke} strokeWidth="2.4" strokeLinejoin="round" />
+          <path d="M24 23c0-6 4-10 8-10s8 4 8 10H24z" fill="#854D0E" stroke={stroke} strokeWidth="2.2" />
+          <rect x="28" y="42" width="8" height="13" rx="1" fill="#78350F" stroke={stroke} strokeWidth="2" />
+          <path d="M12 10l40 40M52 10L12 50" stroke={stroke} strokeWidth="4.6" strokeLinecap="round" />
+          <path d="M12 10l40 40M52 10L12 50" stroke="#FFFFFF" strokeWidth="2.2" strokeLinecap="round" />
+          <circle cx="32" cy="30" r="3.5" fill="#854D0E" stroke={stroke} strokeWidth="2" />
+        </g>
+      );
+    case 5: // Castle (Violet-purple fortress with twin turrets & arched gate)
+      return (
+        <g>
+          <rect x="10" y="23" width="11" height="32" fill="#7C3AED" stroke={stroke} strokeWidth="2.2" />
+          <rect x="43" y="23" width="11" height="32" fill="#7C3AED" stroke={stroke} strokeWidth="2.2" />
+          <polygon points="8,23 15.5,10 23,23" fill="#4C1D95" stroke={stroke} strokeWidth="2.2" strokeLinejoin="round" />
+          <polygon points="41,23 48.5,10 56,23" fill="#4C1D95" stroke={stroke} strokeWidth="2.2" strokeLinejoin="round" />
+          <path
+            d="M21 29h4v4h4v-4h6v4h4v-4h4v26H21V29z"
+            fill="#8B5CF6"
+            stroke={stroke}
+            strokeWidth="2.2"
+            strokeLinejoin="round"
+          />
+          <path d="M26 55V43a6 6 0 0 1 12 0v12H26z" fill="#FDE68A" stroke={stroke} strokeWidth="2" />
+          <line x1="32" y1="37" x2="32" y2="55" stroke={stroke} strokeWidth="1.8" />
+        </g>
+      );
+    case 6: // Lighthouse (Teal & white striped tower + glowing beacon)
+      return (
+        <g>
+          <polygon points="10,20 26,18 26,24 10,22" fill="#FDE047" />
+          <polygon points="54,20 38,18 38,24 54,22" fill="#FDE047" />
+          <polygon points="22,55 26,26 38,26 42,55" fill="#FFFFFF" stroke={stroke} strokeWidth="2.4" strokeLinejoin="round" />
+          <polygon points="24.5,36 39.5,36 40.8,46 23.2,46" fill="#0D9488" stroke={stroke} strokeWidth="1.8" />
+          <rect x="26" y="16" width="12" height="10" fill="#FEF08A" stroke={stroke} strokeWidth="2.2" />
+          <polygon points="24,16 32,8 40,16" fill="#134E4A" stroke={stroke} strokeWidth="2.2" strokeLinejoin="round" />
+          <rect x="17" y="52" width="30" height="4" rx="1.5" fill="#134E4A" stroke={stroke} strokeWidth="2" />
+        </g>
+      );
+    case 7: // Cream Villa (Wide Mediterranean stucco villa with terracotta roof & arches)
+      return (
+        <g>
+          <rect x="8" y="31" width="48" height="24" rx="2" fill="#F5EFE0" stroke={stroke} strokeWidth="2.4" />
+          <polygon points="6,32 14,19 50,19 58,32" fill="#B45309" stroke={stroke} strokeWidth="2.4" strokeLinejoin="round" />
+          <rect x="22" y="14" width="20" height="12" fill="#F5EFE0" stroke={stroke} strokeWidth="2" />
+          <polygon points="19,15 32,8 45,15" fill="#B45309" stroke={stroke} strokeWidth="2" strokeLinejoin="round" />
+          <path d="M13 55V42a4.5 4.5 0 0 1 9 0v13h-9z" fill="#92400E" stroke={stroke} strokeWidth="1.8" />
+          <path d="M27.5 55V41a4.5 4.5 0 0 1 9 0v14h-9z" fill="#92400E" stroke={stroke} strokeWidth="1.8" />
+          <path d="M42 55V42a4.5 4.5 0 0 1 9 0v13h-9z" fill="#92400E" stroke={stroke} strokeWidth="1.8" />
+        </g>
+      );
+    default: // Igloo (Ice-blue snow dome + arched entrance tunnel)
+      return (
+        <g>
+          <path
+            d="M9 51c0-18 10-30 23-30s23 12 23 30H9z"
+            fill="#BAE6FD"
+            stroke={stroke}
+            strokeWidth="2.4"
+            strokeLinejoin="round"
+          />
+          <path d="M14 35h36M11 43h42M24 23v12M39 23v12M19 35v8M32 35v8M45 35v8" stroke="#0284C7" strokeOpacity="0.45" strokeWidth="1.8" />
+          <path
+            d="M23 51V40a9 9 0 0 1 18 0v11H23z"
+            fill="#E0F2FE"
+            stroke={stroke}
+            strokeWidth="2.2"
+          />
+          <path d="M26.5 51v-8a5.5 5.5 0 0 1 11 0v8h-11z" fill="#1E293B" />
+        </g>
+      );
+  }
 }
 
 function renderNumber(item: number) {
